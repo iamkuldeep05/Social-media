@@ -10,7 +10,7 @@ const postListReducer = (currPostList, action) => {
   return currPostList;
 };
 const PostListProvider = ({ children }) => {
-  const [postList, dispatch] = useReducer(postListReducer);
+  const [postList, dispatch] = useReducer(postListReducer, DEFAULT_POST_LIST);
   const addPost = () => {};
   const deletePost = () => {};
 
